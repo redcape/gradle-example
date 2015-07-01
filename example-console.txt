@@ -1,0 +1,103 @@
+default@default-PC /cygdrive/t/code/show-errors/gradle-example
+$ ./gradlew.bat clean check
+:projecta:clean
+:projectdep:clean
+:projectdep:compileJava UP-TO-DATE
+:projectdep:processResources UP-TO-DATE
+:projectdep:classes UP-TO-DATE
+:projectdep:jar
+:projecta:compileJava UP-TO-DATE
+:projecta:processResources UP-TO-DATE
+:projecta:classes UP-TO-DATE
+:projecta:compileTestJava
+:projecta:processTestResources UP-TO-DATE
+:projecta:testClasses
+:projecta:test
+:projecta:check
+:projectdep:compileTestJava UP-TO-DATE
+:projectdep:processTestResources UP-TO-DATE
+:projectdep:testClasses UP-TO-DATE
+:projectdep:test UP-TO-DATE
+:projectdep:check UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 3.617 secs
+
+default@default-PC /cygdrive/t/code/show-errors/gradle-example
+$ ./gradlew.bat clean check
+:projecta:clean
+:projectdep:clean
+:projectdep:compileJava UP-TO-DATE
+:projectdep:processResources UP-TO-DATE
+:projectdep:classes UP-TO-DATE
+:projectdep:jar
+:projecta:compileJava UP-TO-DATE
+:projecta:processResources UP-TO-DATE
+:projecta:classes UP-TO-DATE
+:projecta:compileTestJava
+:projecta:processTestResources UP-TO-DATE
+:projecta:testClasses
+:projecta:test
+:projecta:check
+:projectdep:compileTestJava UP-TO-DATE
+:projectdep:processTestResources UP-TO-DATE
+:projectdep:testClasses UP-TO-DATE
+:projectdep:test UP-TO-DATE
+:projectdep:check UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 3.048 secs
+
+default@default-PC /cygdrive/t/code/show-errors/gradle-example
+$ ./gradlew.bat --daemon clean check
+Starting a new Gradle Daemon for this build (subsequent builds will be faster).
+:projecta:clean
+:projectdep:clean
+:projectdep:compileJava UP-TO-DATE
+:projectdep:processResources UP-TO-DATE
+:projectdep:classes UP-TO-DATE
+:projectdep:jar
+:projecta:compileJava UP-TO-DATE
+:projecta:processResources UP-TO-DATE
+:projecta:classes UP-TO-DATE
+:projecta:compileTestJava
+:projecta:processTestResources UP-TO-DATE
+:projecta:testClasses
+:projecta:test
+:projecta:check
+:projectdep:compileTestJava UP-TO-DATE
+:projectdep:processTestResources UP-TO-DATE
+:projectdep:testClasses UP-TO-DATE
+:projectdep:test UP-TO-DATE
+:projectdep:check UP-TO-DATE
+
+BUILD SUCCESSFUL
+
+Total time: 4.123 secs
+
+default@default-PC /cygdrive/t/code/show-errors/gradle-example
+$ ./gradlew.bat --daemon clean check
+:projecta:clean
+:projectdep:clean FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':projectdep:clean'.
+> Unable to delete file: T:\code\show-errors\gradle-example\projectdep\build\libs\projectdep.jar
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 1.296 secs
+
+default@default-PC /cygdrive/t/code/show-errors/gradle-example
+$ ./gradlew.bat --stop clean check
+Stopping daemon(s).
+Gradle daemon stopped.
+
+#### subsequent builds run fine
