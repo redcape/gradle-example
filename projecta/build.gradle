@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+dependencies {
+    compile project(':projectdep')
+	
+	testCompile 'junit:junit:4.12'
+}
+
+test {
+	useJUnit {
+		// comment the line below to avoid windows issues
+		excludeCategories 'org.example.UnusedCategory'
+	}
+
+}
